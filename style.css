@@ -1,0 +1,132 @@
+*
+{
+	-wepkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+html,body
+{
+	height: 100%;
+	/*background: url(background.jpg) no-repeat center center;
+	background-size: cover;*/
+}
+.logo
+{
+	font-size: 150px;
+    position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+}
+.sign
+{
+	font-size: 30px;
+	margin:30px 70px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+}
+.sign .fa-sign-in
+{
+	margin-right: 50px;
+}
+/**********************************************************************/
+.regastrate
+{
+	width: 300px;
+	height: 350px;
+	background: transparent;
+	position: absolute;
+  	left: 50%;
+  	top: 70%;
+  	transform: translate(-50%,-70%);
+  	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: center;
+  	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.regastrate input
+{
+	display: block;
+	width: 80%;
+	border: none;
+	border-bottom: 1px solid black;
+	background-color: inherit;
+	padding: 2px;
+}
+.regastrate input:focus {
+    outline: none;
+}
+.regastrate section
+{
+	width: 80%;
+	padding: 5px;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-around;
+}
+.regastrate section div
+{
+	width: 100%;
+}
+.regastrate section div input
+{
+	display: inline;
+	width: auto;
+	margin: 0px 20px 0px 0px;
+}
+.regastrate button
+{
+	display: block;
+	width: 80%;
+}
+.regastrate button i
+{
+	margin-right: 20px;
+}
+/**********************************************************************/
+.signin
+{
+	background: transparent;
+	width: 225px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-80%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 10px;
+   
+}
+.signin input
+{
+	width: 90%;
+	border: none;
+	border-bottom: 1px solid black;
+	background-color: inherit;
+	padding: 2px;
+	margin: 5px;
+}
+.signin button
+{
+	width: 90%;
+	padding: 2px;
+	margin: 5px;
+}
+
+.signin input:focus {
+    outline: none;
+}

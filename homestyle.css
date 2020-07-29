@@ -1,0 +1,593 @@
+*
+{
+	-wepkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Tahoma;
+	margin: 0;
+	padding: 0;
+}
+
+
+body, html
+{
+	height: 100%;
+}
+
+body
+{
+	perspective: 100000px;
+}
+
+
+a
+{
+	text-decoration: none;
+}
+
+
+li
+{
+    list-style-type: none;
+}
+
+
+input:focus 
+{
+    outline: none;
+}
+
+/*********************************************************************************************************************/
+
+.plure
+{
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	background-color: black;
+	opacity: 0.7;
+	display: none;
+}
+
+
+.LOGO
+{
+	position: absolute;
+    width: 300px;
+    top: 10%;
+    left: 50%;
+    z-index: 102;
+    margin-left: -150px;
+    color: white;
+    font-size: 90px;
+    display: none;
+}
+
+
+.regastrate
+{
+	width: 300px;
+	height: 360px;
+	background: transparent;
+	position: absolute;
+  	left: 50%;
+  	top: -70%;
+    z-index: 102;
+  	transform: translate(-50%,-70%);
+	background-color: #1A2026;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	padding-top: 50px;
+    text-align: center;
+}
+
+
+.regastrate .fa-user
+{
+	display: block;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 70px;
+    background-color: white;
+    color: #1A202;
+    color: #1A2026;
+}
+
+
+.regastrate input, .regastrate select, .regastrate textarea{
+    color: white;
+}
+
+.regastrate input
+{
+	height: 35px;
+    width: 80%;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.regastrate section input[type='radio']
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+    margin-top: 15px;
+}
+
+.regastrate section div
+{
+	text-align: start;
+	padding-left: 20px;
+}
+
+
+.regastrate button
+{
+     width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+.regastrate button
+{
+	margin-left: 10px;
+}
+
+
+/*********************************************************************************************************************/
+
+nav
+{
+	width: 100%;
+	height: 45px;
+	background-color: #333;
+}
+
+
+nav .links,
+nav .sign 
+{
+	display: inline-block;
+}
+
+nav .links li,
+nav .sign li
+{
+	display: inline-block;
+    height: 100%;
+    width: 100px;
+    line-height: 46px;
+}
+
+
+nav .links li:hover,
+nav .sign .sign_in:hover,
+nav .sign .user_plus:hover
+{
+	background-color: white;
+	color: gray;
+}
+
+.border_bottom
+{
+    border-bottom: 2px solid #7AB1FF; 
+    background-color: #F1F2F2;
+}
+
+nav .links li a,
+nav .sign li a
+{
+	color: gray;
+    display: block;
+    text-align: center;
+}
+
+
+nav .links li a i,
+nav .sign li a i
+{
+	margin-right: 5px;
+}
+
+
+nav .sign
+{
+	display: inline-block;
+	float: right;
+}
+
+nav .sign .pass_email
+{
+	width: 180px;
+	display: inline-block;
+	visibility: hidden;
+}
+
+nav .sign .pass_email input
+{
+	width: 180px;
+    height: 20px;
+    padding: 2px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: white;
+}
+
+nav .sign li:first-of-type
+{
+	margin-right: 10px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+.serch_logo
+{
+	background-color: #ddd;
+	width: 100%;
+	height: 65px;
+	padding: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+
+.serch_logo .logo
+{
+	font-size: 45px;
+    font-weight: 700;
+}
+
+.serch_logo  .search input,
+.serch_logo  .search button
+{
+	width: 500px;
+    height: 80%;
+    padding: 5px 16px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.serch_logo  .search button
+{
+	width: 50px;
+	cursor: pointer;
+}
+
+.serch_logo .filter button
+{
+	width: 90px;
+    height: 80%;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------*/   
+
+.products
+{
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	background-color: #7AB1FF; 
+}
+
+.products .product
+{
+	width: 300px;
+	height: 400px;
+	background-color: #B7D4FF;
+	margin-bottom: 40px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 1s ease-in-out;
+}
+
+
+
+
+.products .product .front
+{
+	padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 2;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+
+.products .product .front img
+{
+	margin-bottom: 10px;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+
+.products .product .front ul
+{
+	width: 90%;
+	margin: auto;
+}
+
+
+.products .product .front li
+{
+	width: 100%;
+	padding: 2px;
+	margin: 2px;
+	overflow: hidden;
+	max-height: 60px;
+}
+
+.products .product .front div
+{
+	width: 90%;
+	margin: auto;
+}
+
+.products .product .front div button
+{
+	background-color: #7AB1FF;
+    margin: 5px;
+    border: none;
+    width: 45%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.products .product .back
+{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    position: absolute;
+    transform: rotatey(180deg);
+}
+
+.products .product .back p
+{
+	padding: 20px;
+}
+
+.products .product .back i{
+	float: right;
+    margin: 8px;
+    cursor: pointer;
+}
+
+
+/*********************************************************************************************************************/
+
+
+.slidshow
+{
+	width: 100%;
+    height: 400px;
+}
+
+.slidshow .announcement
+{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.slidshow .announcement img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.slidshow .announcement .title
+{
+	position: absolute;
+    z-index: 2;
+    width: 400px;
+    top: 195px;
+    left: 50%;
+    margin-left: -200px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.slidshow .announcement .price_offer
+{
+	position: absolute;
+    z-index: 2;
+    width: 400px;
+    top: 233px;
+    left: 50%;
+    margin-left: -200px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.slidshow .announcement p
+{
+	position: absolute;
+    z-index: 2;
+    width: 1000px;
+    height: 70px;
+    top: 265px;
+    left: 50%;
+    margin-left: -500px;
+    font-size: 15px;
+    overflow: hidden;	
+}
+
+
+.slidshow .announcement .buy
+{
+	position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 32px;
+    top: 350px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+
+/*********************************************************************************************************************/
+
+.par
+{
+	height: 270px;
+    width: 100%;
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+
+.par div
+{
+    width: 200px;
+    height: 230px;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+
+
+.par div .title
+{
+	display: block;
+    padding: 10px 0px;
+    color: cadetblue;
+}
+
+
+.par ul li
+{
+	width: 100%;
+    height: 22px;
+}
+
+.par ul li input
+{
+	width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.par ul li i
+{
+	margin-right: 5px;
+    color: cadetblue;
+}
+
+.par ul li span
+{
+
+}
+
+/*********************************************************************************************************************/
+
+
+/*footer*/
+
+.footer1
+{
+	background-color: #4A586E;
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    color: wheat;
+}
+
+
+.footer1 div
+{
+	width: 300px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+.footer1 div h3
+{
+	margin-bottom: 10px;
+}
+
+
+.footer1 div ul li
+{
+	margin-bottom: 2px;
+}
+
+
+.footer1 div ul li a
+{
+	color: white;
+}
+
+
+.medi_icon ul li
+{
+	display: inline-block;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+.medi_icon ul
+{
+	margin-bottom: 20px;
+}
+
+
+.footer2
+{
+	background-color: #231F20;
+	color: white;
+	padding: 5px;
+} 
+
+.

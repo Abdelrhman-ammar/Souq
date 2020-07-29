@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>souq</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="sign">
+		<i class="fa fa-sign-in" aria-hidden="true"></i>
+		<i class="fa fa-user-plus" aria-hidden="true"></i>
+	</div>
+	<div class="logo">SOUQ</div>
+	<form class="regastrate" method="post">
+		<input required focus type="text" name="firstname" placeholder="Frist Name">
+		<input required type="text" name="lasttname" placeholder="Last Name">
+		<input required type="email" name="email" placeholder="Email">
+		<input required type="password" name="password" placeholder="Password">
+		<input required type="password" name="repassword" placeholder="RePassword">
+		<section>
+			<div><input required type="radio" name="type" value="saller"><span>Seller</span></div>
+			<div><input required type="radio" name="type" value="customer"><span>Customer</span></div>
+		</section>
+		<button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send</button>
+	</form>
+	<!--<form class="signin" method="post">
+		<input required type="email" name="email" placeholder="Email">
+		<input required type="password" name="password" placeholder="Password">
+		<button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send</button>
+	</form>-->
+	<script type="text/javascript" src="jquery-3.4.1.min.js" ></script>
+	<script type="text/javascript" src="jquery.js" ></script>	
+</body>
+</html>
